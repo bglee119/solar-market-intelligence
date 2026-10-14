@@ -9,9 +9,9 @@
 - METI RSS: 현재 실행 환경에서 robots.txt HTTP 403. 접근 우회하지 않고 실패를 기록했습니다.
 - 뉴스 6건과 태양광 가격 3개 시계열은 웹 원문을 확인해 초기 입력했습니다. 모든 항목에 자동 수집이 아니라는 표시가 있습니다. ECB 2개 시계열을 합해 가격 모니터에는 5개가 있습니다.
 - 나머지 원재료·기관별 수집은 미확보 또는 이용조건/파서 검토 대기. 해당 가격은 비워 둡니다.
-- **공개 저장소 bglee119/solar-market-intelligence 및 쓰기 권한 확인. GitHub Actions 실제 실행, Pages 배포, 예약 실행은 각각 검증 대기입니다.**
+- **공개 저장소 bglee119/solar-market-intelligence 및 쓰기 권한 확인. GitHub Actions 수동 실행 및 Pages 실제 게시 확인. 수집은 일부 성공이며 예약 시각 실행은 검증 대기입니다.**
 - ChatGPT Sites 배포본은 데이터가 포함된 최초 게시 스냅샷입니다. GitHub Actions가 Sites를 갱신하지는 않습니다. GitHub Pages 전환 이후에는 해당 Pages URL 하나를 고정 운영 URL로 사용합니다.
-- Windows/Android 반응형 CSS 구현. 실제 브라우저 자동화 도구가 없어 클릭·모바일 화면 검증은 미실시입니다.
+- Windows/Android 반응형 CSS 구현. Chrome 실사이트 및 카테고리 클릭 확인. Windows/Android 실기기 검증은 미실시입니다.
 
 ## 로컬 실행
 
@@ -100,3 +100,17 @@ public/data/              실제 데이터와 출처, 실행 이력
 TEST_REPORT.md             검증 결과와 미검증 범위
 SOURCE_AUDIT.md            데이터 소스 검토 기록
 ```
+
+
+## GitHub 운영 검증 업데이트 — 2026-10-14 15:46 JST
+
+- 고정 운영 URL: https://bglee119.github.io/solar-market-intelligence/
+- 저장소: https://github.com/bglee119/solar-market-intelligence
+- 수동 실행 #2: https://github.com/bglee119/solar-market-intelligence/actions/runs/38524108610
+- GitHub 러너의 테스트, 수집 스크립트, 데이터 이력 커밋, 빌드 모두 통과.
+- Deploy GitHub Pages 및 Verify deployment 단계 성공. 현재 실행 ID를 포함한 최신 JSON 게시 확인.
+- 실제 Chrome 화면과 일본 시장 필터 확인: 전체 6건 → 일본 시장 1건 → 전체 6건.
+- 전체 워크플로는 마지막 수집상태 점검에서 실패 표시: METI robots HTTP 403, ECB 성공으로 partial. 사이트 배포 실패를 뜻하지 않습니다.
+- 매일 08:10 JST (UTC 23:10) 예약 설정 완료. workflow_dispatch 실제 실행 확인. 실제 schedule 이벤트는 아직 미검증.
+- 자동 갱신 성공 소스는 ECB 환율입니다. 초기 뉴스 6건과 원재료 3개 관측치는 자동 갱신 대상이 아니며 해당 표시를 유지합니다.
+- Windows/Android 실기기 검증은 미실시. 추가 유료 서비스는 사용하지 않았습니다.
