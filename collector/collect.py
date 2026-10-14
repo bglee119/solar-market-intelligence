@@ -91,7 +91,7 @@ def run(data_dir=ROOT/'public/data',fetcher=None,now=None,config=None):
  for s in cfg:
   state={'name':s['name'],'url':s['url'],'terms_url':s.get('terms_url'),'checked_at':now.isoformat()}
   if not s.get('enabled'):
-   state.update(status='disabled',message=s.get('reason','접근·이용조건 검토 대기'));statuses.append(state);continue
+   state.update(status='reference' if s['type']=='reference' else 'disabled',message=s.get('reason','접근·이용조건 검토 대기'));statuses.append(state);continue
   try:
    body=fetcher.get(s['url'])
    if s['type']=='rss':
@@ -115,7 +115,7 @@ def run(data_dir=ROOT/'public/data',fetcher=None,now=None,config=None):
  history=price_history(history,new_prices);prices=latest_prices(history)
  archive=dedupe(new_news+archive)
  news=[n for n in archive if now-timedelta(days=30)<=datetime.fromisoformat(n['published_at'])<=now+timedelta(minutes=5)]
- active=[s for s in statuses if s['status']!='disabled']
+ active=[s for s in statuses if s['status'] not in ('disabled','reference')]
  status='success' if active and all(s['status']=='success' for s in active) else 'partial' if success else 'failed'
  latest={'schema_version':1,'generated_at':now.isoformat(),'last_attempt_at':now.isoformat(),'last_success_at':now.isoformat() if success else old.get('last_success_at'),'last_full_success_at':now.isoformat() if status=='success' else old.get('last_full_success_at'),'collection_status':status,'schedule':{'timezone':'Asia/Tokyo','target':'08:10','cron_utc':'10 23 * * *','verified':False},'data_latest_date':max([p['as_of'] for p in prices]+[n['published_at'][:10] for n in news],default=None),'prices':prices,'news':news,'insights':analyze(prices,news),'sources':statuses,'policy_events':old.get('policy_events',[]),'coverage':load(ROOT/'config/items.json',[]),'deployment':{'automation':'GitHub Actions 실행 검증 대기','note':'Sites 게시본은 최초 배포 시점 스냅샷입니다. GitHub Pages 자동 운영은 별도 활성화가 필요합니다.'}}
  if os.environ.get('GITHUB_ACTIONS')=='true':

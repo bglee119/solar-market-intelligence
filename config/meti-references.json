@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-14",
+  "verification": "検索に登録された公式資料の見出し・URLを確認。本文の直接取得はHTTP 403のため未確認です。",
+  "update_mode": "手動確認・自動更新ではありません",
+  "items": [
+    {
+      "title": "再生可能エネルギーのFIT制度・FIP制度における2026年度以降の買取価格等と2026年度の賦課金単価を設定します",
+      "date": "2026-03-19",
+      "url": "https://www.meti.go.jp/press/2025/03/20260319004/20260319004.html",
+      "date_label": "発表日"
+    },
+    {
+      "title": "資料1 経済産業省説明資料（資源エネルギー庁）",
+      "date": "2026-06-24",
+      "url": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saiene_shuryoku/pdf/002_01_00.pdf",
+      "date_label": "資料日"
+    }
+  ]
+}

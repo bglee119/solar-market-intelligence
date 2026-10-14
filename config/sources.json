@@ -2,15 +2,16 @@
   {
     "name": "METI 경제산업성",
     "url": "https://www.meti.go.jp/ml_index_release_atom.xml",
-    "type": "rss",
-    "enabled": true,
+    "type": "reference",
+    "enabled": false,
     "timezone": "Asia/Tokyo",
     "solar_only": true,
     "allowed_hosts": [
       "www.meti.go.jp"
     ],
     "terms_url": "https://www.meti.go.jp/main/rules.html",
-    "terms_review": "공공데이터 이용규약 확인. 출처 표시. RSS 엔드포인트 실행 검증 필요."
+    "terms_review": "공공데이터 이용규약 확인. 출처 표시. RSS 엔드포인트 실행 검증 필요.",
+    "reason": "検索登録済みの公式資料の見出し・リンクを掲載。手動確認・自動更新ではありません。本文とRSSの直接取得はHTTP 403のため停止しています。"
   },
   {
     "name": "ECB 유럽중앙은행",
