@@ -20,3 +20,17 @@
 
 Sites 실제 배포는 성공했습니다: https://solar-market-intelligence-japan.bglee119.chatgpt.site
 공개 저장소 https://github.com/bglee119/solar-market-intelligence 생성 및 쓰기 권한을 확인했습니다. Sites 게시 성공을 GitHub Pages 또는 예약 수집 성공으로 간주하지 않습니다.
+
+
+## GitHub 운영 검증 업데이트 — 2026-10-14 15:46 JST
+
+- 고정 운영 URL: https://bglee119.github.io/solar-market-intelligence/
+- 저장소: https://github.com/bglee119/solar-market-intelligence
+- 수동 실행 #2: https://github.com/bglee119/solar-market-intelligence/actions/runs/38524108610
+- GitHub 러너의 테스트, 수집 스크립트, 데이터 이력 커밋, 빌드 모두 통과.
+- Deploy GitHub Pages 및 Verify deployment 단계 성공. 현재 실행 ID를 포함한 최신 JSON 게시 확인.
+- 실제 Chrome 화면과 일본 시장 필터 확인: 전체 6건 → 일본 시장 1건 → 전체 6건.
+- 전체 워크플로는 마지막 수집상태 점검에서 실패 표시: METI robots HTTP 403, ECB 성공으로 partial. 사이트 배포 실패를 뜻하지 않습니다.
+- 매일 08:10 JST (UTC 23:10) 예약 설정 완료. workflow_dispatch 실제 실행 확인. 실제 schedule 이벤트는 아직 미검증.
+- 자동 갱신 성공 소스는 ECB 환율입니다. 초기 뉴스 6건과 원재료 3개 관측치는 자동 갱신 대상이 아니며 해당 표시를 유지합니다.
+- Windows/Android 실기기 검증은 미실시. 추가 유료 서비스는 사용하지 않았습니다.
