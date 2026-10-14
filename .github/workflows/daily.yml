@@ -1,0 +1,89 @@
+name: Daily solar intelligence
+on:
+  schedule:
+    - cron: '10 23 * * *' # 08:10 next day Asia/Tokyo; GitHub may delay scheduled runs
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ['public/data/**']
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: solar-pages
+  cancel-in-progress: false
+jobs:
+  collect-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: pip install -r requirements.txt
+      - run: npm ci
+      - name: Tests
+        run: |
+          python -m unittest discover -s tests -v
+          npm test
+          node tests/render.mjs
+      - name: Collect public sources
+        id: collect
+        run: |
+          python -m collector.collect
+          python -m collector.report
+      - name: Preserve data and errors
+        if: always() && steps.collect.outcome != 'skipped'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: daily collection and health log'
+            git push origin HEAD:main
+          fi
+      - name: Build
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collection-health
+          path: public/data/runs.json
+          retention-days: 30
+  deploy:
+    needs: collect-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify deployment
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          curl --fail --retry 5 --retry-delay 5 "$PAGE_URL" > /tmp/page.html
+          curl --fail --retry 5 --retry-delay 5 "${PAGE_URL}data/latest.json" > /tmp/latest.json
+          python -c 'import json; d=json.load(open("/tmp/latest.json")); assert d["schema_version"] == 1; import os; assert d["deployment"]["run_url"].endswith("/"+os.environ["GITHUB_RUN_ID"]), "Stale deployment"; print(d["collection_status"])'
+      - name: Flag collection failures after site health is published
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python -c 'import json; d=json.load(open("/tmp/latest.json")); assert d["collection_status"] == "success", "Collector degraded; health dashboard deployed. Inspect collection-health artifact."'

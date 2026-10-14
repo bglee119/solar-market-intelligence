@@ -1,0 +1,72 @@
+[
+  {
+    "item": "CNY/JPY",
+    "spec": "ECB EUR 기준 교차환율",
+    "region": "글로벌",
+    "price": 23.622647,
+    "currency": "JPY",
+    "unit": "CNY",
+    "as_of": "2026-10-13",
+    "source": "ECB 유럽중앙은행",
+    "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "basis": "reference cross-rate (not transaction quote)",
+    "confidence": "높음 · 공식 기준환율로 계산",
+    "provenance": "자동 수집 · ECB 교차환율 계산"
+  },
+  {
+    "item": "USD/JPY",
+    "spec": "ECB EUR 기준 교차환율",
+    "region": "글로벌",
+    "price": 158.124777,
+    "currency": "JPY",
+    "unit": "USD",
+    "as_of": "2026-10-13",
+    "source": "ECB 유럽중앙은행",
+    "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "basis": "reference cross-rate (not transaction quote)",
+    "confidence": "높음 · 공식 기준환율로 계산",
+    "provenance": "자동 수집 · ECB 교차환율 계산"
+  },
+  {
+    "item": "실리콘 웨이퍼",
+    "spec": "N-type 210R",
+    "region": "중국",
+    "price": 0.153,
+    "currency": "USD",
+    "unit": "piece",
+    "as_of": "2026-10-06",
+    "source": "pv magazine / OPIS",
+    "url": "https://www.pv-magazine.com/2026/10/09/china-wafer-prices-hold-steady-amid-divergent-output-plans-and-looming-polysilicon-cuts/",
+    "basis": "FOB China",
+    "confidence": "중간 · 전문 가격기관 지표의 공개 보도",
+    "provenance": "초기 확인 자료 · 원문 대조 / 자동 수집 아님"
+  },
+  {
+    "item": "실리콘 웨이퍼",
+    "spec": "N-type M10",
+    "region": "중국",
+    "price": 0.149,
+    "currency": "USD",
+    "unit": "piece",
+    "as_of": "2026-10-06",
+    "source": "pv magazine / OPIS",
+    "url": "https://www.pv-magazine.com/2026/10/09/china-wafer-prices-hold-steady-amid-divergent-output-plans-and-looming-polysilicon-cuts/",
+    "basis": "FOB China",
+    "confidence": "중간 · 전문 가격기관 지표의 공개 보도",
+    "provenance": "초기 확인 자료 · 원문 대조 / 자동 수집 아님"
+  },
+  {
+    "item": "폴리실리콘 N-type",
+    "spec": "China Mono Premium / N-type ingot용",
+    "region": "중국",
+    "price": 38.786,
+    "currency": "CNY",
+    "unit": "kg",
+    "as_of": "2026-09-29",
+    "source": "pv magazine / OPIS",
+    "url": "https://www.pv-magazine.com/2026/10/02/global-polysilicon-prices-hold-steady-as-china-price-gains-meet-buyer-resistance/",
+    "basis": "OPIS China Mono Premium assessment",
+    "confidence": "중간 · 전문 가격기관 지표의 공개 보도",
+    "provenance": "초기 확인 자료 · 원문 대조 / 자동 수집 아님"
+  }
+]

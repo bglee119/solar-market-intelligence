@@ -1,0 +1,35 @@
+{
+  "price_series": [
+    {
+      "series": "CNY/JPY|ECB EUR 기준 교차환율|글로벌|JPY|CNY|ECB 유럽중앙은행|reference cross-rate (not transaction quote)",
+      "observations": 1,
+      "first_date": "2026-10-13",
+      "last_date": "2026-10-13"
+    },
+    {
+      "series": "USD/JPY|ECB EUR 기준 교차환율|글로벌|JPY|USD|ECB 유럽중앙은행|reference cross-rate (not transaction quote)",
+      "observations": 1,
+      "first_date": "2026-10-13",
+      "last_date": "2026-10-13"
+    },
+    {
+      "series": "실리콘 웨이퍼|N-type 210R|중국|USD|piece|pv magazine / OPIS|FOB China",
+      "observations": 1,
+      "first_date": "2026-10-06",
+      "last_date": "2026-10-06"
+    },
+    {
+      "series": "실리콘 웨이퍼|N-type M10|중국|USD|piece|pv magazine / OPIS|FOB China",
+      "observations": 1,
+      "first_date": "2026-10-06",
+      "last_date": "2026-10-06"
+    },
+    {
+      "series": "폴리실리콘 N-type|China Mono Premium / N-type ingot용|중국|CNY|kg|pv magazine / OPIS|OPIS China Mono Premium assessment",
+      "observations": 1,
+      "first_date": "2026-09-29",
+      "last_date": "2026-09-29"
+    }
+  ],
+  "note": "서로 다른 규격·지역·통화·단위·출처·거래조건은 집계도 분리합니다."
+}

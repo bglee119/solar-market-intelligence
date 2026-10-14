@@ -1,0 +1,131 @@
+[
+  {
+    "title": "통웨이 메이산 셀 기지, 기술 개조 후 연간 생산능력 조정",
+    "original_title": "Tongwei’s Meishan PV Cell Base Completes Technical Renovation, Annual Production Capacity Adjusted to 52.05 GW",
+    "published_at": "2026-10-13T00:00:00+09:00",
+    "announcement_date": null,
+    "date_precision": "day_only",
+    "url": "https://www.energytrend.com/news/20261013-52279.html",
+    "source": "EnergyTrend",
+    "summary": "메이산 셀 기지의 기술 개조와 연간 52.05GW 생산능력 조정이 보도됐습니다. 생산능력과 실제 생산량은 구분해야 합니다.",
+    "categories": [
+      "중국 시장",
+      "웨이퍼·셀",
+      "제조사·경쟁사"
+    ],
+    "manufacturers": [
+      "Tongwei"
+    ],
+    "importance": "주목",
+    "impact": "일본 실거래가·수요에 미치는 정량 영향은 미확인",
+    "provenance": "초기 확인 자료 · 웹 원문 대조 / 자동 수집 아님",
+    "verified_at": "2026-10-14T14:21:40.803332+09:00",
+    "id": "b084612a023fffe0"
+  },
+  {
+    "title": "Jinko·Trina 등 태양광·축전지 수주 관련 발표",
+    "original_title": "New Updates on Solar & Energy Storage Orders of Jinko, Trina and Three Other Enterprises",
+    "published_at": "2026-10-13T00:00:00+09:00",
+    "announcement_date": null,
+    "date_precision": "day_only",
+    "url": "https://www.energytrend.com/news/20261013-52281.html",
+    "source": "EnergyTrend",
+    "summary": "주요 기업들의 태양광·에너지저장 관련 수주 소식입니다. 개별 계약의 조건과 납기 일정은 원문 확인이 필요합니다.",
+    "categories": [
+      "모듈",
+      "제조사·경쟁사"
+    ],
+    "manufacturers": [
+      "JinkoSolar",
+      "Trina Solar"
+    ],
+    "importance": "주목",
+    "impact": "일본 실거래가·수요에 미치는 정량 영향은 미확인",
+    "provenance": "초기 확인 자료 · 웹 원문 대조 / 자동 수집 아님",
+    "verified_at": "2026-10-14T14:21:40.803332+09:00",
+    "id": "90e6b8e9fa37f1cd"
+  },
+  {
+    "title": "중국 웨이퍼 가격 보합, 생산계획은 업체별 차이",
+    "original_title": "China wafer prices hold steady amid divergent output plans and looming polysilicon cuts",
+    "published_at": "2026-10-09T00:00:00+09:00",
+    "announcement_date": null,
+    "date_precision": "day_only",
+    "url": "https://www.pv-magazine.com/2026/10/09/china-wafer-prices-hold-steady-amid-divergent-output-plans-and-looming-polysilicon-cuts",
+    "source": "pv magazine / OPIS",
+    "summary": "10월 6일 OPIS 자료 기준 FOB 중국 N-type M10 웨이퍼는 0.149 USD/장, 210R은 0.153 USD/장으로 보도됐습니다.",
+    "categories": [
+      "중국 시장",
+      "웨이퍼·셀",
+      "폴리실리콘"
+    ],
+    "manufacturers": [],
+    "importance": "주목",
+    "impact": "일본 실거래가·수요에 미치는 정량 영향은 미확인",
+    "provenance": "초기 확인 자료 · 웹 원문 대조 / 자동 수집 아님",
+    "verified_at": "2026-10-14T14:21:40.803332+09:00",
+    "id": "146f278c0586d16c"
+  },
+  {
+    "title": "글로벌 공급과잉과 지역별 가격 격차 관련 인터뷰",
+    "original_title": "Global PV oversupply accelerates consolidation, regional price divergence",
+    "published_at": "2026-10-08T00:00:00+09:00",
+    "announcement_date": null,
+    "date_precision": "day_only",
+    "url": "https://www.pv-magazine.com/2026/10/08/global-pv-oversupply-accelerates-consolidation-regional-price-divergence",
+    "source": "pv magazine",
+    "summary": "S&P Global Energy 관계자가 공급과잉, 산업 통합과 지역별 가격 차이를 논의했습니다. 인터뷰 전망을 실현된 수급 변화로 취급하지 않습니다.",
+    "categories": [
+      "모듈",
+      "중국 시장",
+      "정책·관세"
+    ],
+    "manufacturers": [],
+    "importance": "주목",
+    "impact": "일본 실거래가·수요에 미치는 정량 영향은 미확인",
+    "provenance": "초기 확인 자료 · 웹 원문 대조 / 자동 수집 아님",
+    "verified_at": "2026-10-14T14:21:40.803332+09:00",
+    "id": "e1efab1ee582c352"
+  },
+  {
+    "title": "중국 N-type용 폴리실리콘 지표 상승, 구매자 저항 보도",
+    "original_title": "Global polysilicon prices hold steady as China price gains meet buyer resistance",
+    "published_at": "2026-10-02T00:00:00+09:00",
+    "announcement_date": null,
+    "date_precision": "day_only",
+    "url": "https://www.pv-magazine.com/2026/10/02/global-polysilicon-prices-hold-steady-as-china-price-gains-meet-buyer-resistance",
+    "source": "pv magazine / OPIS",
+    "summary": "9월 29일 보고서의 중국 N-type용 폴리실리콘 지표는 38.786 CNY/kg입니다. 이전 관측치를 보유하지 않아 자체 변동률은 계산하지 않습니다.",
+    "categories": [
+      "폴리실리콘",
+      "중국 시장",
+      "원재료"
+    ],
+    "manufacturers": [],
+    "importance": "주목",
+    "impact": "일본 실거래가·수요에 미치는 정량 영향은 미확인",
+    "provenance": "초기 확인 자료 · 웹 원문 대조 / 자동 수집 아님",
+    "verified_at": "2026-10-14T14:21:40.803332+09:00",
+    "id": "9d2794ef9bd62c07"
+  },
+  {
+    "title": "일본, 태양광 폐패널 재자원화 제도 합동회의 개최 공지",
+    "original_title": "太陽光発電設備リサイクル制度 合同会議 第11回 開催について",
+    "published_at": "2026-09-29T00:00:00+09:00",
+    "announcement_date": "2026-09-29",
+    "date_precision": "day_only",
+    "source": "일본 환경성",
+    "url": "https://www.env.go.jp/press/press_05604.html",
+    "categories": [
+      "일본 시장",
+      "정책·관세"
+    ],
+    "manufacturers": [],
+    "summary": "환경성은 10월 6일 합동회의 개최 계획과 태양전지 폐기물 재자원화 법률·하위 법령 검토 등의 의제를 공지했습니다. 회의 결과나 확정 시행일을 의미하지 않습니다.",
+    "importance": "주목",
+    "impact": "폐패널 처리와 재자원화 제도 검토 관련 공식 발표. 일본 판매가격 영향은 미확인.",
+    "provenance": "초기 확인 자료 · 공식 원문 대조 / 자동 수집 아님",
+    "verified_at": "2026-10-14T14:23:56.878190+09:00",
+    "id": "f49634eddc8435f6"
+  }
+]

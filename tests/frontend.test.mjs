@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {filterNews,csv,trendRows} from '../src/data.mjs';
+const news=[{title:'모듈 일본',original_title:'Solar Japan',summary:'가격',source:'METI',categories:['모듈','일본 시장'],manufacturers:['LONGi'],published_at:'2026-10-13T10:00:00+09:00'},{title:'구리',summary:'',source:'X',categories:['원재료'],manufacturers:[],published_at:'2026-10-12T10:00:00+09:00'}];
+test('category, manufacturer, query and date jointly filter',()=>{assert.equal(filterNews(news,{category:'모듈',maker:'LONGi',query:'japan',date:'2026-10-13'}).length,1);assert.equal(filterNews(news,{category:'원재료',maker:'LONGi'}).length,0);assert.equal(filterNews(news).length,2)});
+test('CSV protects formula injection and escapes quotes',()=>{const text=csv([{item:'=cmd',spec:'a"b',price:2}]);assert.ok(text.includes("'=cmd"));assert.ok(text.includes('a""b'));assert.ok(text.startsWith('\ufeff'))});
+test('historical chart cannot leak future observations or other units',()=>{const rows=[{series:'USD/kg',as_of:'2026-10-01',price:1},{series:'USD/kg',as_of:'2026-10-15',price:2},{series:'USD/W',as_of:'2026-10-01',price:3}];assert.equal(trendRows(rows,'USD/kg','2026-10-14').length,1)});
