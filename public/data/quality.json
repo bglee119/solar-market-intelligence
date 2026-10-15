@@ -2,15 +2,15 @@
   "price_series": [
     {
       "series": "CNY/JPY|ECB EUR 기준 교차환율|글로벌|JPY|CNY|ECB 유럽중앙은행|reference cross-rate (not transaction quote)",
-      "observations": 2,
+      "observations": 3,
       "first_date": "2026-10-13",
-      "last_date": "2026-10-14"
+      "last_date": "2026-10-15"
     },
     {
       "series": "USD/JPY|ECB EUR 기준 교차환율|글로벌|JPY|USD|ECB 유럽중앙은행|reference cross-rate (not transaction quote)",
-      "observations": 2,
+      "observations": 3,
       "first_date": "2026-10-13",
-      "last_date": "2026-10-14"
+      "last_date": "2026-10-15"
     },
     {
       "series": "실리콘 웨이퍼|N-type 210R|중국|USD|piece|pv magazine / OPIS|FOB China",
