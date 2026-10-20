@@ -70,6 +70,20 @@
     "provenance": "자동 수집 · ECB 교차환율 계산"
   },
   {
+    "item": "CNY/JPY",
+    "spec": "ECB EUR 기준 교차환율",
+    "region": "글로벌",
+    "price": 23.678799,
+    "currency": "JPY",
+    "unit": "CNY",
+    "as_of": "2026-10-20",
+    "source": "ECB 유럽중앙은행",
+    "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "basis": "reference cross-rate (not transaction quote)",
+    "confidence": "높음 · 공식 기준환율로 계산",
+    "provenance": "자동 수집 · ECB 교차환율 계산"
+  },
+  {
     "item": "USD/JPY",
     "spec": "ECB EUR 기준 교차환율",
     "region": "글로벌",
@@ -133,6 +147,20 @@
     "currency": "JPY",
     "unit": "USD",
     "as_of": "2026-10-19",
+    "source": "ECB 유럽중앙은행",
+    "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "basis": "reference cross-rate (not transaction quote)",
+    "confidence": "높음 · 공식 기준환율로 계산",
+    "provenance": "자동 수집 · ECB 교차환율 계산"
+  },
+  {
+    "item": "USD/JPY",
+    "spec": "ECB EUR 기준 교차환율",
+    "region": "글로벌",
+    "price": 158.127508,
+    "currency": "JPY",
+    "unit": "USD",
+    "as_of": "2026-10-20",
     "source": "ECB 유럽중앙은행",
     "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "basis": "reference cross-rate (not transaction quote)",
